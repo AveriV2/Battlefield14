@@ -581,7 +581,7 @@
     prototypes:
       - ClothingHeadHatHelmetHardhat
       - ClothingBeltMilitaryWebbingIkea
-      - ClothingOuterArmorPlateCarrierCivillian
+      - ClothingOuterArmorPlateCarrierCivilian
       - ArmorPlateLight
     chance: 1
 
@@ -603,7 +603,7 @@
      - ClothingBeltMilitaryWebbingRU
      - ClothingBeltMilitaryWebbingSmallPouchesOlive
      - ClothingBeltMilitaryWebbingIkea
-     - ClothingOuterArmorPlateCarrierCivillian
+     - ClothingOuterArmorKevlarVest
      - ClothingOuterArmorSurplusVestUNEmpty
      - ClothingHeadHatHelmetUN
      - ClothingHeadHatHelmetSurplus
@@ -700,7 +700,8 @@
       - ClothingMaskNeckGaiter
       - ClothingBalaclavaMilitary
       - ClothingBalaclavaMilitarySkull
-      - ClothingOuterArmorPlateCarrierCivillian
+      - ClothingOuterArmorPlateCarrierCivilian
+      - ClothingOuterArmorKevlarVest
       - ClothingHandsGlovesColorBlack
       - ClothingBackpackButtpack
       - ClothingBackpackButtpackSurplus

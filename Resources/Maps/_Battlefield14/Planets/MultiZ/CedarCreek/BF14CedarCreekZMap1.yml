@@ -32358,7 +32358,7 @@ entities:
     - type: Transform
       pos: 138.58609,208.34482
       parent: 1
-- proto: ClothingOuterArmorPlateCarrierCivillian
+- proto: ClothingOuterArmorPlateCarrierCivilian
   entities:
   - uid: 11093
     components:
