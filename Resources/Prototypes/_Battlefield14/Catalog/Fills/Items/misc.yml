@@ -142,7 +142,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: ShipRepairDevice
+    - id: BF14ToolShipRepairDevice
     - id: ShipRepairDeviceAmmo
     - id: Crowbar
     - id: Wrench

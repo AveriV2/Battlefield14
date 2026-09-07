@@ -496,7 +496,7 @@
       - id: Wirecutter
       - id: WelderIndustrial
       - id: Multitool
-      - id: ShipRepairDevice
+      - id: BF14ToolShipRepairDevice
 
 #region MEDICAL
 

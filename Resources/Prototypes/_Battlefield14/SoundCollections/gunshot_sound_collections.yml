@@ -136,6 +136,16 @@
   - "/Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_fire-06.ogg"
 
 - type: soundCollection
+  id: BF_MP5_Gunshots_SUPP # MP5 - Used for MP5SD
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/MP5/fire-sup-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP5/fire-sup-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP5/fire-sup-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP5/fire-sup-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP5/fire-sup-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP5/fire-sup-06.ogg"
+
+- type: soundCollection
   id: BF_UZI_Gunshots # UZI - Used for PP-19 Vityaz
   files:
   - "/Audio/_Battlefield14/Weapons/Guns/UZI/uc_uzi_fire-01.ogg"
