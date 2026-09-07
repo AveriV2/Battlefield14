@@ -166,6 +166,7 @@
       - description: This item can be stored on your auxillary suit storage slot.
         color: "#4f94ad"
         requireDetailRange: true
+  - type: Appearance
 
 - type: entity
   name: breaching saw
@@ -222,3 +223,29 @@
       - description: This item can be stored on your auxillary suit storage slot.
         color: "#4f94ad"
         requireDetailRange: true
+
+- type: entity
+  id: BF14ToolShipRepairDevice
+  parent: ShipRepairDevice
+  components:
+  - type: Sprite
+    scale: 1, 1
+    sprite: _Battlefield14/Objects/Tools/srd.rsi
+    layers:
+    - state: base
+    - state: cover
+      color: "#d8a300"
+  - type: Item
+    sprite: _Battlefield14/Objects/Tools/srd.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      - state: cover-inhand-left
+        color: "#d8a300"
+      right:
+      - state: inhand-right
+      - state: cover-inhand-right
+        color: "#d8a300"
+  - type: LimitedCharges
+    maxCharges: 300
+    charges: 100

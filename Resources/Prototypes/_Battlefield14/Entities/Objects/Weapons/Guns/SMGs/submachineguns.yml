@@ -147,6 +147,7 @@
         volume: -5
   - type: ChamberMagazineAmmoProvider
     autoOpenBoltOnEmpty: false
+#    canRack: false cant decide
     soundRack:
       path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
       params:
@@ -231,7 +232,7 @@
       - state: equipped-BACKPACK
   - type: Gun
     soundGunshot:
-      collection: BF_Galil_Gunshots_SUPP
+      collection: BF_MP5_Gunshots_SUPP
       params:
         volume: -12
         variation: 0.125
