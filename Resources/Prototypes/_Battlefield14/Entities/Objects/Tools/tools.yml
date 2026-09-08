@@ -100,19 +100,18 @@
     sprite: _Battlefield14/Objects/Tools/boltcutters.rsi
     layers:
     - state: base
-      map: [ "enum.DamageStateVisualLayers.Base" ]
     - state: cover
-      color: "#383838"
+      color: "#f1b223ff"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
       - state: cover-inhand-left
-        color: "#383838"
+        color: "#f1b223ff"
       right:
       - state: inhand-right
       - state: cover-inhand-right
-        color: "#383838"
+        color: "#f1b223ff"
     size: Large
     shape:
     - 0,0,0,3
@@ -166,12 +165,13 @@
       - description: This item can be stored on your auxillary suit storage slot.
         color: "#4f94ad"
         requireDetailRange: true
+  - type: Appearance
 
 - type: entity
   name: breaching saw
   parent: BaseItem
   id: BreachingSaw
-  description: Powerful tool used to quickly drill through rocks.
+  description: A brutal tool for steadily cutting through steel.
   components:
   - type: Tag
     tags:
@@ -181,17 +181,17 @@
     layers:
     - state: base
     - state: cover
-      color: "#383838"
+      color: "#b33831"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
       - state: cover-inhand-left
-        color: "#383838"
+        color: "#b33831"
       right:
       - state: inhand-right
       - state: cover-inhand-right
-        color: "#383838"
+        color: "#b33831"
     size: Huge
   - type: Clothing
     quickEquip: false
@@ -201,7 +201,7 @@
       suitstorage2:
       - state: equipped-BACKPACK
       - state: cover-equipped-BACKPACK
-        color: "#383838"
+        color: "#b33831"
   - type: MeleeWeapon
     autoAttack: true
     angle: 0
@@ -222,3 +222,29 @@
       - description: This item can be stored on your auxillary suit storage slot.
         color: "#4f94ad"
         requireDetailRange: true
+
+- type: entity
+  id: BF14ToolShipRepairDevice
+  parent: ShipRepairDevice
+  components:
+  - type: Sprite
+    scale: 1, 1
+    sprite: _Battlefield14/Objects/Tools/srd.rsi
+    layers:
+    - state: base
+    - state: cover
+      color: "#f1b223ff"
+  - type: Item
+    sprite: _Battlefield14/Objects/Tools/srd.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      - state: cover-inhand-left
+        color: "#f1b223ff"
+      right:
+      - state: inhand-right
+      - state: cover-inhand-right
+        color: "#f1b223ff"
+  - type: LimitedCharges
+    maxCharges: 300
+    charges: 100

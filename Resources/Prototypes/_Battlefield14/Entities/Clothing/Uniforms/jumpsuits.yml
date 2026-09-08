@@ -1,4 +1,4 @@
-# Base
+#region Base
 
 - type: entity
   parent: ClothingUniformBase
@@ -26,20 +26,18 @@
         color: "#4f94ad"
         requireDetailRange: false
 
-# US
+#region US
 
 - type: entity
   parent: ClothingUniformBaseNATO
   id: ClothingUniformJumpsuitCamoUS
-  name: american camo BDU
+  name: American camo BDU
   description: FUCK I THINK THAT WAS A CIVILIAN.
   components:
   - type: Sprite
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/uscamo.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/uscamo.rsi
-  - type: Faction
-    factionId: "Nato"
 
 - type: entity
   parent: ClothingUniformJumpsuitCamoUS
@@ -96,10 +94,19 @@
   - type: SuitSensor
     randomMode: false
     mode: SensorVitals
-  - type: Faction
-    factionId: "Nato"
 
-# DE
+- type: entity
+  parent: ClothingUniformBaseNATO
+  id: ClothingUniformJumpsuitCamoUSTigerstripe
+  name: tigerstripe uniform
+  description: As I run through the jungle..
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Clothing/USA/Uniform/tigerstripe.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Clothing/USA/Uniform/tigerstripe.rsi
+
+#region DE
 
 - type: entity
   parent: ClothingUniformBaseNATO
@@ -111,23 +118,19 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/decamoflecktarn.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/decamoflecktarn.rsi
-  - type: Faction
-    factionId: "Nato"
 
-# RU
+#region RU
 
 - type: entity
   parent: ClothingUniformBasePACT
   id: ClothingUniformJumpsuitCamoRU
-  name: russian camo jumpsuit
+  name: Russian camo jumpsuit
   description: Helo zelenski, it's donetsk children.
   components:
   - type: Sprite
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/rucamo.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/rucamo.rsi
-  - type: Faction
-    factionId: "Warpact"
 
 - type: entity
   parent: ClothingUniformBasePACT
