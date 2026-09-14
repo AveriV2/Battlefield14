@@ -272,7 +272,7 @@
   description: A favorite of tacticool larpers and MAC V SOG commandos alike.
   components:
   - type: Item # Controls inhand sprites
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/CAR15.rsi
     size: Large
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
@@ -288,7 +288,7 @@
       - state: mag-20-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/CAR15.rsi
   - type: Gun
     projectileSpeed: 40 # Shorter barrel
 
@@ -438,7 +438,7 @@
   description: A favorite of tacticool larpers and MAC V SOG commandos alike.
   components:
   - type: Item # Controls inhand sprites
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/CAR15.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     state: icon-full-M4A1
@@ -453,7 +453,7 @@
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/CAR15.rsi
   - type: WieldedCrosshair
     rsi:
       sprite: _RMC14/Interface/MousePointer/rifle_mouse.rsi
@@ -593,20 +593,10 @@
 
 - type: entity
   name: AR-15
-  parent: WeaponRifleUSM4
+  parent: WeaponRifleUSCAR15
   id: WeaponRifleUSAR15
   description: A civilian pattern of AR15 marred with barrel length and select fire laws, this is as good as an American man can get off the shelf without paying an arm and a leg.
   components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
-    layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: carryhandle
-      - state: stock-adjustable
-      - state: carbine-length-barrel-clamshell
-      - state: mag-30-0
-        map: ["enum.GunVisualLayers.Mag"]
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus

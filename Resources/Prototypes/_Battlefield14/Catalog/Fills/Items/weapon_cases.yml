@@ -139,6 +139,30 @@
       amount: 2
     - id: MagazineBox762x25
 
+- type: entity
+  parent: WeaponCaseShort
+  id: BF14WeaponCaseShortRUPM
+  suffix: PM Makarov
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPistolRUPM
+    - id: MagazinePistolPM
+      amount: 2
+#    - id: MagazineBox9x18
+
+- type: entity
+  parent: WeaponCaseShort
+  id: BF14WeaponCaseShortRUAPS
+  suffix: APS Stechkin
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPistolRUAPS
+    - id: MagazinePistolAPS
+      amount: 2
+#    - id: MagazineBox9x18
+
 #region SMGs, US
 
 - type: entity
@@ -695,6 +719,17 @@
   - type: StorageFill
     contents:
     - id: WeaponRifleRUAKS74U
+    - id: MagazineRifleAK74
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongRUAKS74UB
+  suffix: AKS-74UB
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleRUAKS74UB
     - id: MagazineRifleAK74
       amount: 5
 
