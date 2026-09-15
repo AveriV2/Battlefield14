@@ -148,12 +148,13 @@
       - state: base
         map: ["enum.GunVisualLayers.Base"]
       - state: LPVO
+      - state: grip-HK
       - state: stock-adjustable-HK
       - state: rifle-length-barrel-quadrail
       - state: foregrip
       - state: railcover
-      - state: supp
-        offset: 0.20, 0
+      - state: supp-sopmod
+        offset: 0.20, 0.03
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Icon
