@@ -65,6 +65,9 @@
   id: BF_CartridgeRifle127x55
 
 - type: Tag
+  id: BF_CartridgeRifle303British
+
+- type: Tag
   id: BF_CartridgeRifle408CT
 
 - type: Tag
@@ -183,6 +186,9 @@
 
 - type: Tag
   id: MagazineRifleHK417
+
+- type: Tag
+  id: MagazineRifleLeeEnfield
 
 - type: Tag
   id: MagazineRifleSTANAG

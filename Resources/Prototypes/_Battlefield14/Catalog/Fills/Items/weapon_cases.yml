@@ -539,6 +539,19 @@
     - id: MagazineRifleSTANAG
       amount: 5
 
+#region Rifles, GB
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongGBLeeEnfield
+  suffix: Lee Enfield No. 1 Mk III
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleGBLeeEnfield
+    - id: MagazineRifleLeeEnfield
+      amount: 5
+
 #region Machine guns, DE
 
 - type: entity
