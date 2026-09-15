@@ -14,9 +14,12 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
+      - state: grip
       - state: carryhandle
       - state: stock-full
       - state: rifle-length-barrel-M16
+      - state: muzzle-brake
+        offset: 0.19,0
       - state: mag-20-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
@@ -90,9 +93,12 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
+      - state: grip
       - state: carryhandle
       - state: stock-full
       - state: rifle-length-barrel-M16
+      - state: muzzle-brake
+        offset: 0.19,0
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: ItemSlots
@@ -135,9 +141,12 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
+      - state: grip
       - state: carryhandle
       - state: stock-full
       - state: rifle-length-barrel-clamshell
+      - state: muzzle-brake
+        offset: 0.19,0
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
@@ -197,9 +206,12 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
+      - state: grip
       - state: carryhandle
       - state: stock-full
       - state: rifle-length-barrel-clamshell
+      - state: muzzle-brake
+        offset: 0.19,0
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Icon
@@ -248,9 +260,12 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
+      - state: grip
       - state: acog
       - state: stock-full
       - state: rifle-length-barrel-quadrail
+      - state: muzzle-brake
+        offset: 0.19,0
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
@@ -282,6 +297,7 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
+      - state: grip
       - state: carryhandle
       - state: stock-full-short
       - state: carbine-length-barrel-XM177
@@ -293,7 +309,7 @@
     projectileSpeed: 40 # Shorter barrel
 
 - type: entity
-  name: M4A1 Carbine
+  name: M4A1 carbine
   parent: WeaponRifleUSM16A3
   id: WeaponRifleUSM4A1
   description: The classic American slugthrower.
@@ -308,9 +324,11 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
+      - state: grip
       - state: reddot
-      - state: stock-adjustable
+      - state: stock-adjustable-sopmod1
       - state: carbine-length-barrel-quadrail
+      - state: muzzle-brake
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
@@ -322,14 +340,14 @@
     minAngle: 26
     maxAngle: 40
     angleIncrease: 1
-    projectileSpeed: 40 # Shorter barrel
+    projectileSpeed: 45
   - type: WieldedCrosshair
     rsi:
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi
       state: M68
 
 - type: entity
-  name: M4A1 Carbine (ACOG)
+  name: M4A1 carbine (ACOG)
   parent: WeaponRifleUSM4A1
   id: WeaponRifleUSM4A1ACOG
   components:
@@ -338,9 +356,11 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
+      - state: grip
       - state: acog
-      - state: stock-adjustable
+      - state: stock-adjustable-sopmod1
       - state: carbine-length-barrel-quadrail
+      - state: muzzle-brake
       - state: foregrip
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
@@ -370,7 +390,7 @@
     minAngle: 26
     maxAngle: 40
     angleIncrease: 1.5
-    projectileSpeed: 40 # Shorter barrel
+    projectileSpeed: 45
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 5
@@ -381,7 +401,7 @@
       state: acog
 
 - type: entity
-  name: M4A1 Carbine SUPP.
+  name: M4A1 carbine SUPP.
   parent: WeaponRifleUSM4A1
   id: WeaponRifleUSM4A1SUPP
   description: This is so CAG bro!.
@@ -396,11 +416,12 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
+      - state: grip
       - state: holosight
-      - state: stock-adjustable
+      - state: stock-adjustable-sopmod2
       - state: carbine-length-barrel-quadrail
-      - state: supp # Lower in YML = higher priority
-        offset: 0.15, 0
+      - state: supp-sopmod # Lower in YML = higher priority
+        offset: 0.095, 0.03
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
@@ -414,7 +435,7 @@
     minAngle: 26
     maxAngle: 40
     angleIncrease: 1
-    projectileSpeed: 40 # Shorter barrel
+    projectileSpeed: 45
     availableModes:
     - SemiAuto
     - FullAuto
@@ -441,15 +462,17 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/CAR15.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
-    state: icon-full-M4A1
+    state: icon-full-CAR15
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
+      - state: grip
       - state: carryhandle
-      - state: stock-adjustable
+      - state: stock-adjustable-sopmod1
       - state: carbine-length-barrel-clamshell
+      - state: muzzle-brake
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
@@ -460,7 +483,7 @@
       state: all
 
 - type: entity
-  name: M4 Carbine
+  name: M4 carbine
   parent: WeaponRifleUSM4A1
   id: WeaponRifleUSM4
   description: Before the M4 was A1 it had a 3 round burst
@@ -476,9 +499,11 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
+      - state: grip
       - state: carryhandle
-      - state: stock-adjustable
+      - state: stock-adjustable-sopmod1
       - state: carbine-length-barrel-quadrail
+      - state: muzzle-brake
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
@@ -490,7 +515,7 @@
     minAngle: 29
     maxAngle: 42
     angleIncrease: 1
-    projectileSpeed: 40 # Shorter barrel
+    projectileSpeed: 45
     availableModes:
     - SemiAuto
     - Burst
@@ -519,13 +544,13 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
-      - state: carryhandle
-      - state: reddot
-        offset: 0, 0.09
-      - state: stock-adjustable
+      - state: grip
+      - state: carryhandle-reddot
+      - state: stock-adjustable-sopmod1
       - state: carbine-length-barrel-clamshell
       - state: supp
-        offset: 0.15, 0
+        offset: 0.06, 0.03
+      - state: laser-taped
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
@@ -539,7 +564,7 @@
     minAngle: 26
     maxAngle: 40
     angleIncrease: 1
-    projectileSpeed: 40 # Shorter barrel
+    projectileSpeed: 45
     availableModes:
     - SemiAuto
     - FullAuto
@@ -557,25 +582,30 @@
       state: M68
 
 - type: entity
-  name: AR-15 Police Carbine
-  parent: WeaponRifleUSM4A1
-  id: WeaponRifleUSAR15Police
-  description: An off the shelf AR-15 with some extra attachments and a law enforcement serial number.
+  name: M27 RWK
+  parent: WeaponRifleUSM16A3
+  id: WeaponRifleUSM27RWK
+  description: A shorter barreled M27 for recon marines.
   components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    state: icon-full-M4A1
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
-      - state: reddot
-      - state: stock-adjustable
-      - state: carbine-length-barrel-quadrail
-      - state: foregrip
-      - state: railcover
+      - state: grip-HK
+      - state: holosight
+      - state: stock-adjustable-sopmod2
+      - state: carbine-length-barrel-M27
+      - state: foregrip-short
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
-  - type: Wieldable
-    unwieldOnUse: false
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1.rsi
   - type: GunWieldBonus
     minAngle: -24
     maxAngle: -27
@@ -583,13 +613,11 @@
     minAngle: 26
     maxAngle: 40
     angleIncrease: 1
-    projectileSpeed: 40 # Shorter barrel
-    fireRate: 5
-    availableModes:
-    - SemiAuto
-    selectedMode: SemiAuto
-  - type: RandomMetadata
-    nameSegments: [names_AR15_police]
+    projectileSpeed: 45
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: eotech
 
 - type: entity
   name: AR-15
@@ -606,8 +634,90 @@
     minAngle: 26
     maxAngle: 40
     angleIncrease: 1
-    projectileSpeed: 40 # Shorter barrel
+    projectileSpeed: 45
     fireRate: 5
     availableModes:
     - SemiAuto
     selectedMode: SemiAuto
+
+- type: entity
+  name: AR-15 police carbine
+  parent: WeaponRifleUSAR15
+  id: WeaponRifleUSAR15Police
+  description: An off the shelf AR-15 with some extra attachments and a law enforcement serial number.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: grip
+      - state: reddot
+      - state: stock-adjustable
+      - state: carbine-length-barrel-quadrail
+      - state: muzzle-brake
+      - state: foregrip
+      - state: railcover
+        offset: -0.155,0
+      - state: mag-30-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: RandomMetadata
+    nameSegments: [names_AR15_police]
+
+- type: entity
+  parent: WeaponRifleUSM4A1
+  id: WeaponRifleUSRandomM4
+  suffix: random
+  components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/CAR15.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    state: icon-full-CAR15
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: grip
+        map: [ "grip" ]
+      - state: carryhandle
+        map: [ "optic" ]
+      - state: stock-adjustable-sopmod1
+        map: [ "stock" ]
+      - state: carbine-length-barrel-quadrail
+        map: [ "barrel" ]
+      - state: muzzle-brake
+        map: [ "accessory" ]
+      - state: mag-30-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/CAR15.rsi
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/rifle_mouse.rsi
+      state: all
+  - type: RandomSprite
+    available:
+    - grip:
+        grip-HK: ""
+    - optic:
+        carryhandle-reddot: ""
+        reddot: ""
+        holosight: ""
+    - stock:
+        stock-full: ""
+        stock-adjustable: ""
+        stock-adjustable-sopmod2: ""
+        stock-adjustable-HK: ""
+    - barrel:
+        carbine-length-barrel-clamshell: ""
+        carbine-length-barrel-M27: ""
+        rifle-length-barrel-M27: ""
+    - accessory:
+        laser: ""
+        laser-taped: ""
+        foregrip: ""
+        foregrip-short: ""
+        muzzle-comp: ""
+        railcover: ""

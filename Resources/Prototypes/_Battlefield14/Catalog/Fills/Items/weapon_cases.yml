@@ -349,6 +349,17 @@
 
 - type: entity
   parent: WeaponCaseLong
+  id: BF14WeaponCaseLongUSM27RWK
+  suffix: M27RWK
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleUSM27RWK
+    - id: MagazineRifleSTANAG
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
   id: BF14WeaponCaseLongUSAR15
   suffix: AR15
   components:
