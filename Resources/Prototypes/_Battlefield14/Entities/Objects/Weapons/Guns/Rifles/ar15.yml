@@ -445,6 +445,7 @@
       params:
         volume: -12
         variation: 0.125
+        range: 15
     fireRate: 7
   - type: Appearance
   - type: WieldedCrosshair
@@ -574,6 +575,7 @@
       params:
         volume: -12
         variation: 0.125
+        range: 15
     fireRate: 7
   - type: Appearance
   - type: WieldedCrosshair
