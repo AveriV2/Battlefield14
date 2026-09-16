@@ -181,6 +181,7 @@
       params:
         volume: -12
         variation: 0.125
+        range: 15
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 10
