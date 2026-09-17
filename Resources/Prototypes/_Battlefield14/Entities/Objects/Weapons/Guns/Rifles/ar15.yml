@@ -587,13 +587,13 @@
   name: M27 RWK
   parent: WeaponRifleUSM16A3
   id: WeaponRifleUSM27RWK
-  description: A shorter barreled M27 for recon marines.
+  description: A shorter barreled M27 for recon marines. CAG.
   components:
   - type: Item # Controls inhand sprites
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M27-RWK.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
-    state: icon-full-M4A1
+    state: icon-full-M27RWK
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     layers:
@@ -601,13 +601,13 @@
         map: ["enum.GunVisualLayers.Base"]
       - state: grip-HK
       - state: holosight
-      - state: stock-adjustable-sopmod2
+      - state: stock-adjustable
       - state: carbine-length-barrel-M27
       - state: foregrip-short
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M27-RWK.rsi
   - type: GunWieldBonus
     minAngle: -24
     maxAngle: -27
