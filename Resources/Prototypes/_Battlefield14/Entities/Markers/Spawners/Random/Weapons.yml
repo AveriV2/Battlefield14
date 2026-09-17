@@ -108,6 +108,7 @@
     prototypes:
       - CrateSecgearPACTFilledRPG7
       - CrateSecgearPACTFilledRPG26Thermobaric
+      - CrateSecgearPACTFilledRPOAShmel
       - CrateSecgearPACTFilledRPG30
     chance: 1
 
