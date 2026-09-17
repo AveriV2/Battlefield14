@@ -254,6 +254,9 @@
   id: MagazinePistolSR1MP
 
 - type: Tag
+  id: MagazinePistolSR2Udav
+
+- type: Tag
   id: MagazinePistolUSP45
 
 - type: Tag

@@ -121,3 +121,24 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+
+- type: entity
+  parent: MagazinePistolSR1MP
+  id: MagazinePistolSR2Udav
+  name: SR2 Udav magazine (9x21mm)
+  description: When you pull the trigger, the last bullet in the magazine will ascend a fixed distance, until fired; after which the slide will lock to the rear.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolSR2Udav
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    capacity: 18
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/PM.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
