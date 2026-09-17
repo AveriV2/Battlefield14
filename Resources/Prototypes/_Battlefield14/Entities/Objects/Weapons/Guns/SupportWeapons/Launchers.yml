@@ -600,7 +600,7 @@
   description: Unlike tanks and APCs, infantry can't get armour that allows them to shrug off 40 year old anti-personnel solutions.. Or 400 year old anti-personnel solutions.
   components:
   - type: BasicEntityAmmoProvider
-    proto: BulletRocketRPG7FragArmingDistance
+    proto: BulletRocketRPG26ThermobaricArmingDistance
     capacity: 1
 
 - type: entity
