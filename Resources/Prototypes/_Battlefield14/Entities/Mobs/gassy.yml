@@ -11,11 +11,14 @@
     understands:
     - TauCetiBasic
     - Russian
+    - Ukrainian
     - English
     - Sign
     - German
     - Mexican
     - Esperanto
+    - Red
+    - Blue
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -64,7 +67,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-#      1000: Critical
+#      2900: Critical
       3000: Dead
   - type: DamageStateVisuals
     states:
@@ -84,6 +87,8 @@
       params:
         range: 50
   - type: MeleeWeapon
+    soundHit:
+      collection: Punch
     damage:
       types:
         Blunt: 35
@@ -96,7 +101,7 @@
     - ActionGassyOpenDoors
   - type: AmbientSound
     volume: 12
-    range: 30
+    range: 20
     enabled: true
     sound:
       path: /Audio/_Battlefield14/Misc/gassy/song.ogg
@@ -110,7 +115,7 @@
   - type: NightVision # Gen 3 wide-quadtube
     relayOverlay: false
     goggleEffect: true
-    viewCircleRadius: 450
+    viewCircleRadius: 600
     viewCircleCount: 1
     viewCircleSpacing: 280
     action: ActionToggleNightVision
@@ -128,3 +133,13 @@
       enum.RadarConsoleUiKey.Key:
         type: RadarConsoleBoundUserInterface
   - type: Insulated
+  - type: Damageable
+    damageContainer: Biological
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 3000
+      behaviors:
+      - !type:GibBehavior { }
