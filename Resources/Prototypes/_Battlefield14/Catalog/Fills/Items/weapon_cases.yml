@@ -129,6 +129,18 @@
 
 - type: entity
   parent: WeaponCaseShort
+  id: BF14WeaponCaseShortRUSR2udav
+  suffix: SR2 Udav
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPistolRUSR2Udav
+    - id: MagazinePistolSR2Udav
+      amount: 2
+    - id: MagazineBox9x21
+
+- type: entity
+  parent: WeaponCaseShort
   id: BF14WeaponCaseShortRUTT33
   suffix: TT33
   components:
@@ -149,7 +161,7 @@
     - id: WeaponPistolRUPM
     - id: MagazinePistolPM
       amount: 2
-#    - id: MagazineBox9x18
+    - id: MagazineBox9x18mm
 
 - type: entity
   parent: WeaponCaseShort
@@ -161,7 +173,7 @@
     - id: WeaponPistolRUAPS
     - id: MagazinePistolAPS
       amount: 2
-#    - id: MagazineBox9x18
+    - id: MagazineBox9x18mm
 
 #region SMGs, US
 
