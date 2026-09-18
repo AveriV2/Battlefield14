@@ -575,6 +575,43 @@
     - id: MagazineRifleLeeEnfield
       amount: 5
 
+#region Snipers, GB
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongGBAWM
+  suffix: AWM
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSniperGBAWM
+    - id: MagazineSniperAWM
+      amount: 6
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongGBAWP
+  suffix: AWP
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSniperGBAWP
+    - id: MagazineSniperAWP
+      amount: 6
+
+#region Snipers, DE
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongDEG22A2
+  suffix: G22A2/AWM
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSniperDEG22A2
+    - id: MagazineSniperAWM
+      amount: 6
+
 #region Machine guns, DE
 
 - type: entity
