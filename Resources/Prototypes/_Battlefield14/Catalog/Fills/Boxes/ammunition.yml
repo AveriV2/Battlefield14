@@ -223,6 +223,23 @@
       - id: MagazineSubmachinegunMP7
         amount: 8
 
+#region BE
+
+- type: entity
+  name: box of P90 magazines
+  parent: BoxMagazine
+  id: BoxMagazineP90
+  description: A box full of 5.7x28mm P90 magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazineSubmachinegunP90
+        amount: 5
+
+
 #region GB
 
 - type: entity
