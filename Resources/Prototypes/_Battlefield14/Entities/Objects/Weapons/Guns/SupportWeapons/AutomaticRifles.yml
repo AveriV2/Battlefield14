@@ -91,7 +91,7 @@
         map: ["enum.GunVisualLayers.Base"]
       - state: grip-HK
       - state: longcog
-      - state: stock-adjustable-sopmod2
+      - state: stock-adjustable
       - state: rifle-length-barrel-M27
       - state: foregrip
       - state: mag-30-0

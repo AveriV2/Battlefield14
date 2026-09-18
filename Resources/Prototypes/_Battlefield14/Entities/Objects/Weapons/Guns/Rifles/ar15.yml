@@ -536,7 +536,7 @@
   description: This is so CAG bro!.
   components:
   - type: Item # Controls inhand sprites
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1SUPP.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/CAR15SUPP.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     state: icon-full-M4A1
@@ -555,7 +555,7 @@
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1SUPP.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/CAR15SUPP.rsi
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
