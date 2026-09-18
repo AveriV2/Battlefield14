@@ -562,6 +562,19 @@
     - id: MagazineRifleSTANAG
       amount: 5
 
+#region SMGs, BE
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongBEP90
+  suffix: P90
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSubmachinegunBEP90
+    - id: MagazineSubmachinegunP90
+      amount: 5
+
 #region Rifles, GB
 
 - type: entity
