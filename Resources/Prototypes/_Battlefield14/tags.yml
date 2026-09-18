@@ -65,6 +65,9 @@
   id: BF_CartridgeRifle127x55
 
 - type: Tag
+  id: BF_CartridgeRifle300WM
+
+- type: Tag
   id: BF_CartridgeRifle303British
 
 - type: Tag
@@ -129,6 +132,12 @@
 
 - type: Tag
   id: GasMask
+
+- type: Tag
+  id: MagazineSniperAWM
+
+- type: Tag
+  id: MagazineSniperAWP
 
 - type: Tag
   id: MagazineSniperIntervention
