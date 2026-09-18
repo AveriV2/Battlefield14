@@ -18,7 +18,7 @@
         map: ["enum.GunVisualLayers.Base"]
       - state: grip-HK
       - state: longcog
-      - state: stock-adjustable-sopmod2
+      - state: stock-adjustable-HK
       - state: rifle-length-barrel-quadrail
       - state: railcover
       - state: muzzle-comp

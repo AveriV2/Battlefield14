@@ -197,52 +197,16 @@
 
 - type: entity
   name: M16A3
-  parent: WeaponRifleUSM16A1
+  parent: WeaponRifleUSM16A2
   id: WeaponRifleUSM16A3
-  description: The classic American slugthrower.
+  description: An M16A1 lower with an M16A2 upper and handguard, barely used outside of USAF security. # correct me if i'm wrong
   components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
-    layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: grip
-      - state: carryhandle
-      - state: stock-full
-      - state: rifle-length-barrel-clamshell
-      - state: muzzle-brake
-        offset: 0.19,0
-      - state: mag-30-0
-        map: ["enum.GunVisualLayers.Mag"]
-  - type: Icon
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
-    state: icon-full-M16A2
   - type: Gun
-    projectileSpeed: 55 # twenty inch barrel
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineRifleSTANAG
-        insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
-        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazineRifleSTANAG
-        whitelistFailPopup: gun-magazine-whitelist-fail
-      gun_chamber:
-        name: Chamber
-        startingItem: BF_CartridgeRifle556x45
-        priority: 1
-        whitelist:
-          tags:
-            - BF_CartridgeRifle556x45
-  - type: MagazineVisuals
-    magState: mag-30
-    steps: 1
-    zeroVisible: true
-  - type: Appearance
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    fireRate: 7
 
 - type: entity
   name: M16A4
@@ -422,6 +386,7 @@
       - state: carbine-length-barrel-quadrail
       - state: supp-sopmod # Lower in YML = higher priority
         offset: 0.095, 0.03
+      - state: foregrip
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
