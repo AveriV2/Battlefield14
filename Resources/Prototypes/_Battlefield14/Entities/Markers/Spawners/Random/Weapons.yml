@@ -88,7 +88,7 @@
   - type: RandomSpawner
     offset: 0
     prototypes:
-#      - CrateSecgearNATOFilledG22A2
+      - CrateSecgearNATOFilledG22A2
       - CrateSecgearNATOFilledG28
     chance: 1
 

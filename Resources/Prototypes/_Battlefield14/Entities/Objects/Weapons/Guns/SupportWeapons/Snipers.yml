@@ -563,7 +563,7 @@
           tags:
             - BF_CartridgeRifle762x51
   - type: Gun
-    damageModifier: 2.5
+    damageModifier: 1.5
 
 #region RU
 
