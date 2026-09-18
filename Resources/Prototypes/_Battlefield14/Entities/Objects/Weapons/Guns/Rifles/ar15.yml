@@ -185,10 +185,6 @@
         whitelist:
           tags:
             - BF_CartridgeRifle556x45
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
   - type: MagazineVisuals
     magState: mag-30
     steps: 1
@@ -197,52 +193,16 @@
 
 - type: entity
   name: M16A3
-  parent: WeaponRifleUSM16A1
+  parent: WeaponRifleUSM16A2
   id: WeaponRifleUSM16A3
-  description: The classic American slugthrower.
+  description: An M16A1 lower with an M16A2 upper and handguard, barely used outside of USAF security. # correct me if i'm wrong
   components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
-    layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: grip
-      - state: carryhandle
-      - state: stock-full
-      - state: rifle-length-barrel-clamshell
-      - state: muzzle-brake
-        offset: 0.19,0
-      - state: mag-30-0
-        map: ["enum.GunVisualLayers.Mag"]
-  - type: Icon
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
-    state: icon-full-M16A2
   - type: Gun
-    projectileSpeed: 55 # twenty inch barrel
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineRifleSTANAG
-        insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
-        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazineRifleSTANAG
-        whitelistFailPopup: gun-magazine-whitelist-fail
-      gun_chamber:
-        name: Chamber
-        startingItem: BF_CartridgeRifle556x45
-        priority: 1
-        whitelist:
-          tags:
-            - BF_CartridgeRifle556x45
-  - type: MagazineVisuals
-    magState: mag-30
-    steps: 1
-    zeroVisible: true
-  - type: Appearance
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    fireRate: 7
 
 - type: entity
   name: M16A4
@@ -422,6 +382,7 @@
       - state: carbine-length-barrel-quadrail
       - state: supp-sopmod # Lower in YML = higher priority
         offset: 0.095, 0.03
+      - state: foregrip
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
@@ -536,7 +497,7 @@
   description: This is so CAG bro!.
   components:
   - type: Item # Controls inhand sprites
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1SUPP.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/CAR15SUPP.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     state: icon-full-M4A1
@@ -555,7 +516,7 @@
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1SUPP.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/CAR15SUPP.rsi
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
@@ -730,7 +691,7 @@
   name: XM16E1 (gold)
   description: A one of a kind gold plated XM16E1 meant as a gift to JFK, unfortunately he was assassinated before it could be delivered to him. Serial number 050000. Unfired.
   components:
-  - type: Item # Controls inhand sprites
+  - type: Item
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/XM16E1goldonmob.rsi
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/XM16E1gold.rsi
@@ -744,6 +705,61 @@
     state: icon
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/XM16E1goldonmob.rsi
+  - type: Gun
+    damageModifier: 1.1 # lol
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+
+- type: entity
+  parent: WeaponRifleUSM16A1
+  id: WeaponRifleUSXM16E1Patriot
+  name: "XM16E1 'Patriot'"
+  description: A one of a kind chopped down XM16E1 with a double drum magazine, obviously extremely unwieldy and impractical, but you feel kindof important holding it.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/XM16E1patriot.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/XM16E1patriot.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/XM16E1patriot.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/XM16E1patriot.rsi
+  - type: GunWieldBonus
+    minAngle: -25
+    maxAngle: -35
+  - type: Gun
+    minAngle: 30
+    maxAngle: 60
+    angleIncrease: 2
+    projectileSpeed: 40
+    angleDecay: 10
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleSTANAGDoubleDrum
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleSTANAG
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle556x45
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle556x45
   - type: MagazineVisuals
     magState: mag
     steps: 1
