@@ -8,36 +8,6 @@
   },
   "states": [
     {
-      "name": "icon"
-    },
-    {
-      "name": "base"
-    },
-    {
-      "name": "bolt-open"
-    },
-    {
-      "name": "mag-0"
-    },
-    {
-      "name": "mag-1"
-    },
-    {
-      "name": "mag-2"
-    },
-    {
-      "name": "mag-3"
-    },
-    {
-      "name": "magnifier"
-    },
-    {
-      "name": "collimator"
-    },
-    {
-      "name": "foregrip"
-    },
-    {
       "name": "inhand-left",
       "directions": 4
     },
