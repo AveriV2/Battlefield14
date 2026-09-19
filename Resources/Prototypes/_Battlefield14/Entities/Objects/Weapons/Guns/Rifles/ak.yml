@@ -137,7 +137,7 @@
   components:
   - type: Item
     size: Large
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKS74u.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AKS74u.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
     state: icon-aks74u
@@ -154,7 +154,7 @@
       - state: mag-ak74-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKS74u.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AKS74u.rsi
   - type: Gun
     angleIncrease: 1.5
     projectileSpeed: 40 # Shorter barrel
