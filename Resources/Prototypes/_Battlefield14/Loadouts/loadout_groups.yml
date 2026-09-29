@@ -330,7 +330,7 @@
   - LoadoutJumpsuitChef2
   - LoadoutUniformJumpsuitPlain
   fallbacks:
-  - LoadoutJumpsuitChef1 
+  - LoadoutJumpsuitChef1
 
 - type: loadoutGroup
   id: BF_JumpsuitsCivilianRUEMT
