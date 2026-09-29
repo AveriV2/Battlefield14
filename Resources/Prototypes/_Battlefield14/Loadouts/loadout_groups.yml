@@ -144,18 +144,6 @@
 #region BODY (uniform/armour)
 
 - type: loadoutGroup
-  id: BF_JumpsuitsChef
-  name: Uniform
-  minLimit: 1
-  maxLimit: 1
-  loadouts:
-  - LoadoutJumpsuitChef1
-  - LoadoutJumpsuitChef2
-  - LoadoutUniformJumpsuitPlain
-  fallbacks:
-  - LoadoutJumpsuitChef1 
-  
-- type: loadoutGroup
   id: BF_JumpsuitsCivilianUS
   name: loadout-group-BF14-jumpsuit
   minLimit: 1
@@ -281,17 +269,6 @@
   - LoadoutOuterArmorPlateCarrierHeavyTrack
   fallbacks:
   - LoadoutOuterArmorPlateCarrierHeavy
-  
-- type: loadoutGroup
-  id: BF_OuterChef
-  name: Apron
-  minLimit: 1
-  maxLimit: 1
-  loadouts:
-  - LoadoutOuterArmorChefApron
-  - LoadoutOuterArmorButcherApron
-  fallbacks:
-  - LoadoutOuterArmorChefApron
 
 - type: loadoutGroup
   id: BF_HelmetBossRU
@@ -344,6 +321,18 @@
   - LoadoutJumpsuitCivilianSmiley
 
 - type: loadoutGroup
+  id: BF_JumpsuitsChef
+  name: Uniform
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutJumpsuitChef1
+  - LoadoutJumpsuitChef2
+  - LoadoutUniformJumpsuitPlain
+  fallbacks:
+  - LoadoutJumpsuitChef1 
+
+- type: loadoutGroup
   id: BF_JumpsuitsCivilianRUEMT
   name: loadout-group-BF14-jumpsuit
   minLimit: 1
@@ -361,6 +350,17 @@
   - LoadoutOuterCoatEMS
   - LoadoutOuterCoatFirstResponder
   - LoadoutOuterCoatCivUkr
+
+- type: loadoutGroup
+  id: BF_OuterChef
+  name: Apron
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutOuterArmorChefApron
+  - LoadoutOuterArmorButcherApron
+  fallbacks:
+  - LoadoutOuterArmorChefApron
 
 #region BACK
 
@@ -404,7 +404,7 @@
   - LoadoutHandsGlovesSoldierBlack
   - LoadoutHandsGlovesSoldierFingerless
   - LoadoutHandsGlovesSoldierWristwatch
-  
+
 - type: loadoutGroup
   id: BF_ChefGloves
   name: Gloves
@@ -557,15 +557,6 @@
   - LoadoutArmbandStationMap
 
 - type: loadoutGroup
-  id: BF_KnifeChef
-  name: Knife
-  minLimit: 1
-  maxLimit: 1
-  loadouts:
-  - LoadoutChefCleaver
-  - LoadoutChefKnife
- 
-- type: loadoutGroup
   id: BF_NATOIFFBox
   name: loadout-group-BF14-natoiff-box
   minLimit: 0
@@ -584,3 +575,12 @@
   - LoadoutItemsIFFBoxPACTWhite
   - LoadoutItemsIFFBoxPACTRed
   - LoadoutItemsIFFBoxPACTStGeorge
+
+- type: loadoutGroup
+  id: BF_KnifeChef
+  name: Knife
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutChefCleaver
+  - LoadoutChefKnife
