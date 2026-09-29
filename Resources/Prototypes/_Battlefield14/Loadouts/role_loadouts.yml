@@ -808,8 +808,7 @@
   - BF_CombatMasks
   - BF_CrewGlasses
   - BF_SoldierGloves
-  - BF_MiscItemsNATO
-  - BF_NATOIFF
+  - BF_MiscItemsPACT
   - ContractorWallet
 
 - type: roleLoadout
@@ -820,7 +819,6 @@
   - BF_CrewGlasses
   - BF_SoldierGloves
   - BF_MiscItemsPACT
-  - BF_PACTIFF
   - ContractorWallet
 
 #region Civilian
@@ -862,7 +860,6 @@
   groups:
   - BF_HeadCivilianRU
   - BF_CombatMasks
-  - BF_NATOIFF
   - BF_JumpsuitsCivilianUANationalist
   - BF_OuterCivilianRU
   - BF_WPSGloves
@@ -873,10 +870,20 @@
 - type: roleLoadout
   id: JobGypsy
   groups:
-  - BF_PACTIFF
   - BF_WPSGloves
   - BF_ShoesCivilian
   - BF_MiscItemsIND
+  - ContractorWallet
+  
+- type: roleLoadout
+  id: JobCivilianChefDE
+  groups:
+  - BF_JumpsuitsChef
+  - BF_ChefGloves
+  - BF_ShoesCivilian
+  - BF_MiscItemsIND
+  - BF_OuterChef
+  - BF_KnifeChef
   - ContractorWallet
 
 #region Misc
