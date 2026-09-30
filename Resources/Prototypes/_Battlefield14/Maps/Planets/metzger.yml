@@ -34,15 +34,15 @@
         - type: CEStationZLevels
           mapsAbove:
             - /Maps/_Battlefield14/Planets/MultiZ/Metzgerstadt/BF14MetzgerstadtZMap1.yml
-          #mapsBelow:
-          # - /Maps/_Battlefield14/Planets/caves.yml
+          mapsBelow:
+           - /Maps/_Battlefield14/Planets/caves.yml
           zLevelsComponentOverrides:
             - type: CEAutoGridGravity
 
 - type: zMap
   id: BF14MetzgerstadtZMap
   maps:
-    #- /Maps/_Battlefield14/Planets/caves.yml   
+    - /Maps/_Battlefield14/Planets/caves.yml   
     - /Maps/_Battlefield14/Planets/MultiZ/Metzgerstadt/BF14MetzgerstadtZMap0.yml    
     - /Maps/_Battlefield14/Planets/MultiZ/Metzgerstadt/BF14MetzgerstadtZMap1.yml   
   components:
